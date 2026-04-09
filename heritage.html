@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>非遗传承 — 免费视频教学 — 不凋</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">不<span>凋</span></a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="打开菜单"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html#story-winter">品牌故事</a></li>
+            <li><a href="products.html">产品系列</a></li>
+            <li><a href="heritage.html">非遗传承</a></li>
+            <li><a href="enterprise.html">政企定制</a></li>
+            <li><a href="index.html#contact">联系我们</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <p class="subtitle" style="color: var(--color-gold)">Heritage</p>
+      <h1>非遗传承 · 免费视频教学</h1>
+      <p>
+        丝网花制作基础与进阶技艺分享。
+      </p>
+    </div>
+
+    <main class="section section--wide">
+      <div class="video-grid reveal">
+        <article class="video-card" data-title="丝网花入门：材料与工具" data-duration="12:08" data-cover="https://images.unsplash.com/photo-1452860606245-b08b5a6b9f5d?w=800&q=80&auto=format&fit=crop">
+          <div class="video-card__thumb">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="video-card__play" aria-hidden="true">▶</div>
+          </div>
+          <div class="video-card__meta">
+            <h4>丝网花入门：材料与工具</h4>
+            <span>时长 12:08 · 基础</span>
+          </div>
+        </article>
+        <article class="video-card" data-title="花瓣塑形与渐变上色" data-duration="18:36" data-cover="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&q=80">
+          <div class="video-card__thumb">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&q=80" alt="" loading="lazy" />
+            <div class="video-card__play" aria-hidden="true">▶</div>
+          </div>
+          <div class="video-card__meta">
+            <h4>花瓣塑形与渐变上色</h4>
+            <span>时长 18:36 · 进阶</span>
+          </div>
+        </article>
+        <article class="video-card" data-title="组装与造型：郁金香案例" data-duration="24:02" data-cover="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800&q=80">
+          <div class="video-card__thumb">
+            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800&q=80" alt="" loading="lazy" />
+            <div class="video-card__play" aria-hidden="true">▶</div>
+          </div>
+          <div class="video-card__meta">
+            <h4>组装与造型：郁金香案例</h4>
+            <span>时长 24:02 · 进阶</span>
+          </div>
+        </article>
+        <article class="video-card" data-title="叶饰与插花固定技巧" data-duration="15:47" data-cover="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800&q=80">
+          <div class="video-card__thumb">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800&q=80" alt="" loading="lazy" />
+            <div class="video-card__play" aria-hidden="true">▶</div>
+          </div>
+          <div class="video-card__meta">
+            <h4>叶饰与插花固定技巧</h4>
+            <span>时长 15:47 · 基础</span>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div class="modal-overlay player-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+      <div class="modal-box">
+        <button type="button" class="modal-close" id="closeVideoModal" aria-label="关闭">×</button>
+        <div class="player-area">
+          <img id="playerCover" src="" alt="" />
+          <div class="player-loading" id="playerLoading">加载中…</div>
+        </div>
+        <div class="player-bar">
+          <span aria-hidden="true">▶</span>
+          <div class="fake-progress"><span></span></div>
+          <span id="playerDuration">00:00</span>
+        </div>
+        <div style="padding: 16px 20px; text-align: left">
+          <h3 id="videoModalTitle" style="margin: 0; font-size: 1.1rem"></h3>
+          <p style="margin: 8px 0 0; font-size: 0.85rem; color: var(--color-text-muted)">
+            演示播放器 · 无实际视频流
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">不<span>凋</span></div>
+          <p style="margin-top: 12px; opacity: 0.85">传承技艺 · 赋能就业</p>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><a href="index.html#contact">课程合作与公益培训</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/heritage.js"></script>
+  </body>
+</html>
